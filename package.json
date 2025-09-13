@@ -1,0 +1,49 @@
+{
+  "name": "@datastructures-ts/stack",
+  "version": "4.0.0",
+  "description": "A type-safe stack data structure implementation in TypeScript",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatefrad/stack.git"
+  },
+  "keywords": [
+    "stack",
+    "typescript",
+    "data-structure",
+    "generic",
+    "type-safe"
+  ],
+  "author": "Hatef Rad <hatefrad@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hatefrad/stack/issues"
+  },
+  "homepage": "https://github.com/hatefrad/stack#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.50.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
